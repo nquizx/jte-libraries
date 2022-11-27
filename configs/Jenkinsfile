@@ -4,10 +4,6 @@ pipeline {
   }
 
   stages {
-    build()
-    test()
     security_scan()
-    publish_artifact()
-    deploy()
   }
 }
