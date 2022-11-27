@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 
 node {
-  security_scan()
+  stage('Security scan') {
+    security_scan()
+  }
 }
