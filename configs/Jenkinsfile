@@ -1,11 +1,1 @@
-pipeline {
-  agent {
-    docker { image 'node:18.12.1' }
-  }
-
-  stages {
-    stage('Security scanning') {
-      security_scan()
-    }
-  }
-}
+security_scan()
