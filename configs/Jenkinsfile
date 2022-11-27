@@ -4,6 +4,8 @@ pipeline {
   }
 
   stages {
-    security_scan()
+    state('Security scanning') {
+      security_scan()
+    }
   }
 }
